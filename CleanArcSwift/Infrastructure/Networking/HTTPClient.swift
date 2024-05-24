@@ -36,6 +36,7 @@ class HTTPClient: HTTPClientType {
                 switch response.result {
                 case .failure(let error):
                     continuation.resume(returning: .failure(.serverError))
+                    print(error.localizedDescription)
                 case .success(let data):
                     continuation.resume(returning: .success(data))
                 }
