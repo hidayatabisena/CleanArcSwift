@@ -25,7 +25,7 @@ struct CASProductItem: View {
                     .font(.caption2)
                     .bold()
                     .textCase(.uppercase)
-                    .foregroundColor(.gray)
+                    .foregroundStyle(.gray)
                 
                 Text(product.title)
                     .font(.footnote)

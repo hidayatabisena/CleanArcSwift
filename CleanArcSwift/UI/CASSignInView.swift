@@ -67,7 +67,7 @@ struct CASSignInView: View {
                             
                             Button(action: {showPassword.toggle()}, label: {
                                 Image(systemName: showPassword ? "eye.slash" : "eye")
-                                    .foregroundColor(.black)
+                                    .foregroundStyle(.black)
                             })
                         }
                     }
@@ -96,7 +96,7 @@ struct CASSignInView: View {
                     })
                     .frame(width: 350, height: 50)
                     .background(.black)
-                    .foregroundColor(.white)
+                    .foregroundStyle(.white)
                     .cornerRadius(10)
                     
                     LabelledDivider(label: "or")
@@ -113,7 +113,7 @@ struct CASSignInView: View {
                             Text("Continue with Facebook")
                         })
                     }
-                    .foregroundColor(.black)
+                    .foregroundStyle(.black)
                     .font(.footnote)
                     .frame(width: 350, height: 50)
                     .background(
@@ -136,7 +136,6 @@ struct CASSignInView: View {
         }
     }
 }
-
 
 extension View {
     func getRect() -> CGRect {
@@ -161,7 +160,7 @@ struct iOSCheckboxToggleStyle: ToggleStyle {
                 configuration.label
             }
         })
-        .foregroundColor(.black)
+        .foregroundStyle(.black)
     }
 }
 
@@ -180,7 +179,7 @@ struct LabelledDivider: View {
     var body: some View {
         HStack {
             line
-            Text(label).foregroundColor(color)
+            Text(label).foregroundStyle(color)
             line
         }
     }
