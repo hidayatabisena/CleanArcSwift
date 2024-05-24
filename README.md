@@ -6,7 +6,7 @@ Trying to understand about implementation Clean Architecture in a surface with S
 
 ## Screenshots
 
-![App Screenshot](https://res.cloudinary.com/moyadev/image/upload/v1716530512/CleanShot_2024-05-24_at_12.58.38_2x_i7oe9k.png)
+![Demo app](https://res.cloudinary.com/moyadev/image/upload/v1716544822/finalSS_bjlam9.png)
 
 
 ## Key Benefits
